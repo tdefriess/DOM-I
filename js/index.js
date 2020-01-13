@@ -49,7 +49,9 @@ i = 0;
 // };
 
 let ctaSection = document.querySelectorAll('.cta-text *');
-console.log(ctaSection);
+let ctaImage = document.getElementById('cta-img');
+console.log(ctaImage);
+
 ctaSection[0].textContent = siteContent['cta']['h1'];
 ctaSection[1].textContent = siteContent['cta']['button'];
-
+ctaImage.src = siteContent['cta']['img-src'];
