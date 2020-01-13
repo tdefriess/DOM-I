@@ -42,12 +42,12 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 let links = document.querySelectorAll('a');
-links[0].textContent = siteContent['nav']['nav-item-1']
-links[1].textContent = siteContent['nav']['nav-item-2']
-links[2].textContent = siteContent['nav']['nav-item-3']
-links[3].textContent = siteContent['nav']['nav-item-4']
-links[4].textContent = siteContent['nav']['nav-item-5']
-links[5].textContent = siteContent['nav']['nav-item-6']
+links[0].textContent = siteContent['nav']['nav-item-1'];
+links[1].textContent = siteContent['nav']['nav-item-2'];
+links[2].textContent = siteContent['nav']['nav-item-3'];
+links[3].textContent = siteContent['nav']['nav-item-4'];
+links[4].textContent = siteContent['nav']['nav-item-5'];
+links[5].textContent = siteContent['nav']['nav-item-6'];
 
 let ctaSection = document.querySelectorAll('.cta-text *');
 let ctaImage = document.getElementById('cta-img');
@@ -57,14 +57,38 @@ ctaSection[1].textContent = siteContent['cta']['button'];
 ctaImage.src = siteContent['cta']['img-src'];
 
 let copy = document.querySelectorAll('.text-content *');
-copy[0].textContent = siteContent['main-content']['features-h4']
-copy[1].textContent = siteContent['main-content']['features-content']
-copy[2].textContent = siteContent['main-content']['about-h4']
-copy[3].textContent = siteContent['main-content']['about-content']
-copy[4].textContent = siteContent['main-content']['services-h4']
-copy[5].textContent = siteContent['main-content']['services-content']
-copy[6].textContent = siteContent['main-content']['product-h4']
-copy[7].textContent = siteContent['main-content']['product-content']
-copy[8].textContent = siteContent['main-content']['vision-h4']
-copy[9].textContent = siteContent['main-content']['vision-content']
+copy[0].textContent = siteContent['main-content']['features-h4'];
+copy[1].textContent = siteContent['main-content']['features-content'];
+copy[2].textContent = siteContent['main-content']['about-h4'];
+copy[3].textContent = siteContent['main-content']['about-content'];
+copy[4].textContent = siteContent['main-content']['services-h4'];
+copy[5].textContent = siteContent['main-content']['services-content'];
+copy[6].textContent = siteContent['main-content']['product-h4'];
+copy[7].textContent = siteContent['main-content']['product-content'];
+copy[8].textContent = siteContent['main-content']['vision-h4'];
+copy[9].textContent = siteContent['main-content']['vision-content'];
 
+let middleImage = document.getElementById('middle-img');
+middleImage.src = siteContent['main-content']['middle-img-src'];
+
+let contactSection = document.querySelectorAll('.contact *');
+contactSection[0].textContent = siteContent['contact']['contact-h4'];
+contactSection[1].textContent = siteContent['contact']['address'];
+contactSection[2].textContent = siteContent['contact']['phone'];
+contactSection[3].textContent = siteContent['contact']['email'];
+
+let footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
+
+let newTopLink = document.createElement('a');
+newTopLink.href = '#';
+newTopLink.textContent = 'Top';
+let newNavLink = document.createElement('a');
+newNavLink.href = '#';
+newNavLink.textContent = 'Neat';
+
+let parentElement = document.querySelector('footer');
+parentElement.append(newTopLink);
+
+parentElement = document.querySelector('nav');
+parentElement.prepend(newNavLink);
