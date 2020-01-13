@@ -42,16 +42,29 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 let links = document.querySelectorAll('a');
-i = 0;
-// for (var key in siteContent.nav){
-//   links[i].textContent = siteContent['nav'][key];
-//   i++;
-// };
+links[0].textContent = siteContent['nav']['nav-item-1']
+links[1].textContent = siteContent['nav']['nav-item-2']
+links[2].textContent = siteContent['nav']['nav-item-3']
+links[3].textContent = siteContent['nav']['nav-item-4']
+links[4].textContent = siteContent['nav']['nav-item-5']
+links[5].textContent = siteContent['nav']['nav-item-6']
 
 let ctaSection = document.querySelectorAll('.cta-text *');
 let ctaImage = document.getElementById('cta-img');
-console.log(ctaImage);
 
 ctaSection[0].textContent = siteContent['cta']['h1'];
 ctaSection[1].textContent = siteContent['cta']['button'];
 ctaImage.src = siteContent['cta']['img-src'];
+
+let copy = document.querySelectorAll('.text-content *');
+copy[0].textContent = siteContent['main-content']['features-h4']
+copy[1].textContent = siteContent['main-content']['features-content']
+copy[2].textContent = siteContent['main-content']['about-h4']
+copy[3].textContent = siteContent['main-content']['about-content']
+copy[4].textContent = siteContent['main-content']['services-h4']
+copy[5].textContent = siteContent['main-content']['services-content']
+copy[6].textContent = siteContent['main-content']['product-h4']
+copy[7].textContent = siteContent['main-content']['product-content']
+copy[8].textContent = siteContent['main-content']['vision-h4']
+copy[9].textContent = siteContent['main-content']['vision-content']
+
