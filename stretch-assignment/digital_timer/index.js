@@ -15,9 +15,8 @@ function myTimer(){
 var timer = window.setInterval(myTimer, 10);
 
 let digits = document.getElementsByClassName('digit');
-console.log(digits);
 setTimeout(() => {clearInterval(timer);
-    for (let i in digits){
+    for (let i = 0; i<5; i++){
         digits[i].classList.add('redDigit');
     }
-}, 10015);
+}, 10025);
